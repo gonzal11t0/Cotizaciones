@@ -1,0 +1,245 @@
+@media screen and (max-width:800px){
+    .dVYOij {
+        width:600px!important;
+    }
+    .my-4 {
+        width:600px !important;
+    }
+}
+@media screen and (max-width:600px){
+    .dVYOij {
+        width:auto!important;
+    }
+    .hKuxLw {
+        padding: 10px 10px !important;
+        margin-right:30px !important;
+        margin-left:30px !important;
+        border-radius:5px !important;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        -ms-border-radius:5px;
+        -o-border-radius:5px;
+    }
+    .menu-horizontal > li > a {
+        padding: 5px;
+        margin-left:10px;
+        font-size:0.8rem;
+    }
+    .container{
+        width: 400px !important;;
+        margin: 0 auto;
+        margin-top:80px;
+    }
+    h1{
+        font-size:1rem ;
+    }   
+    .cotizaciones th:first-child {
+        text-align: left;
+    }
+    .cotizaciones thead th {
+        border-bottom: none;
+    }
+    .table.cotizaciones th {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+    .cotizaciones th {
+        background-color: #6fa169;
+        border: 0;
+        border-bottom: 3px solid transparent;
+        color: #FFFFFF;
+        font-size: 0.8em !important;;
+        font-weight:400;
+        text-align: right;
+    }
+    table.cotizaciones td {
+        border: 1px;
+        border-bottom:1px solid #bebebe;
+        font-weight:200;
+        text-align:center;
+        height:40px;
+    }
+    .cotizaciones tr th:nth-child(4), .cotizaciones tr td:nth-child(4) {
+        display:in;
+    }
+    .cotizaciones tr th:nth-child(3), .cotizaciones tr td:nth-child(3) {
+        display:in;
+    }
+    .my-4 {
+        margin-top: 20vh !important;
+        margin-bottom: 0rem!important;
+        width:400px !important;
+    }
+    .container-button {
+        position: fixed;
+        bottom:120px;
+        right: 10vh !important;;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+}
+@media screen and (min-width:230px) and (max-width:400px){
+    .hKuxLw {
+        padding: 5px 5px !important;
+        margin-right:1px !important;
+        margin-left:10px !important;
+        border-radius:none !important;
+        -webkit-border-radius:none !important;
+        -moz-border-radius:none !important;
+        -ms-border-radius:none !important;
+        -o-border-radius:none !important;
+    }
+    .menu-horizontal > li > a {
+        padding:2px;
+        margin-left:0px;
+        font-size:0.8rem;
+    }
+    .menu-vertical li a{
+        padding:5px 1px 5px 5px;
+        margin-top: 20px;
+        width: auto;
+    }
+    .menu-horizontal li:hover .menu-vertical{
+        display: block;
+        background-color: #011d0a;
+        width: auto;
+    }
+    .iJLAou {
+        height:40px !important;
+        top: 50px !important;
+        width:100px !important;
+    }
+    .container{
+        width: 100% !important;;
+        margin: 0 auto;
+        margin-top:80px;
+    }
+    h1{
+        font-size:1rem ;
+    }   
+    .cotizaciones th:first-child {
+        text-align: left;
+    }
+    .cotizaciones thead th {
+        border-bottom: none;
+    }
+    .table.cotizaciones th {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+    .cotizaciones th {
+        background-color: #6fa169;
+        border: 0;
+        border-bottom: 3px solid transparent;
+        color: #FFFFFF;
+        font-size: 0.8em !important;;
+        font-weight:400;
+        text-align: right;
+    }
+    table.cotizaciones td {
+        border: 1px;
+        border-bottom:1px solid #bebebe;
+        font-weight:200;
+        text-align:center;
+        height:40px;
+    }
+    .cotizaciones tr th:nth-child(4), .cotizaciones tr td:nth-child(4) {
+        display: none;
+    }
+    .cotizaciones tr th:nth-child(3), .cotizaciones tr td:nth-child(3) {
+        display: none;
+    }
+    .my-4 {
+        margin-top: 20vh !important;
+        margin-bottom: 0rem!important;
+        width: 100% !important;
+    }
+    .container-calculadora,.container-titulo-calculadora,.form,.container-resultado{
+        width: 230px !important;
+    }
+    .container-titulo-calculadora h1{
+        font-size:1rem !important;
+        color: #000000 !important;
+    }
+    .container-titulo-calculadora h1::first-letter{
+        color: green;
+    }
+    h1.icon.calculadora {
+        background-image: url(../pages/calculadora.png);
+    }
+    h1.icon {
+        padding: 20px 0 20px 60px;
+        background-image: url(../pages/calculadora.png);
+        background-position:left;
+        background-repeat: no-repeat;
+        color: #c5cad0;
+        margin: 0 auto;
+    }
+    .container-resultado h2{
+        padding-bottom:2vh;
+    }
+    .container-select-options {
+        position: relative;
+        width: 200px; 
+        margin: 0 auto;
+        padding-top:2vh;
+    }
+    select {
+        width:100%;
+        padding:12px;
+        border:5px solid #025e5e;
+        border-radius:10px;
+        appearance: none;
+        background-color: #025e5e;
+        color:#ffff;
+        cursor: pointer;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        -ms-border-radius:10px;
+        -o-border-radius:10px;
+    }
+    select:focus {
+        outline: none;
+        border-color: #025e2b; /* cambia el color del borde cuando está enfocado */
+    }
+    option {
+        background-color: #fff; 
+        color: #000; 
+    }
+    option:hover {
+        background-color: #007bff;
+        color: #fff; 
+    }
+    .css-c5v1qu-MuiInputBase-input-MuiFilledInput-input {
+        text-align: center;
+        color: #fff !important;
+        font-size: 1.2rem !important;
+    }
+    .container-form{
+        width: 100% !important;
+        background-color: #06521e;
+    }
+    form input{
+        width:200px !important;
+        border:1px solid #ccc !important;
+        box-sizing:border-box !important;
+        margin-top:90px !important;
+        padding:5px !important;
+        border-radius:5px !important;
+        -webkit-border-radius:5px !important;
+        -moz-border-radius:5px !important;
+        -ms-border-radius:5px !important;
+        -o-border-radius:5px !important;
+    }
+    .css-c5v1qu-MuiInputBase-input-MuiFilledInput-input::-webkit-input-placeholder {
+        color: white !important ;
+        opacity:1 !important;
+    }
+    .container-button-form{
+        width:200px!important;
+    }
+    .css-oq7typ-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+        color: #ffff !important;
+        width: auto !important;
+    }
+}

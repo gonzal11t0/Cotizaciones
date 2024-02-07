@@ -1,0 +1,163 @@
+{
+    "DolarBlueBSAS":{
+        "compra":"1131",
+        "venta":"1157"
+    },
+
+    "DolarBlueCapitalFederal":{
+        "compra":"1125",
+        "venta":"1145"
+    },
+
+    "DolarBlueCatamarca":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueChaco":{
+        "compra":"1125",
+        "venta":"1145"
+    },
+
+    "DolarBlueChubut":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueCordoba":{
+        "compra":"1125",
+        "venta":"1157"
+    },
+
+    "DolarBlueCorrientes":{
+        "compra":"1128",
+        "venta":"1145"
+    },
+
+    "DolarBlueEntreRios":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueFormosa":{
+        "compra":"1125",
+        "venta":"1145"
+    },
+
+    "DolarBlueJujuy":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueLaPampa":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueLaRioja":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueMendoza":{
+        "compra":"1125",
+        "venta":"1148"
+    },
+
+    "DolarBlueMisiones":{
+        "compra":"1125",
+        "venta":"1145"
+    },
+
+    "DolarBlueNeuquen":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueRioNegro":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueSalta":{
+        "compra":"1125",
+        "venta":"1157"
+    },
+
+    "DolarBlueSanJuan":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueSanLuis":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarBlueSantaCruz":{
+        "compra":"1125",
+        "venta":"1163"
+    },
+
+    "DolarBlueSantaFe":{
+        "compra":"1128",
+        "venta":"1157"
+    },
+
+    "DolarBlueSantiagoEstero":{
+        "compra":"1125",
+        "venta":"1145"
+    },
+
+    "DolarBlueTierraFuego":{
+        "compra":"1125",
+        "venta":"1163"
+    },
+
+    "DolarBlueTucuman":{
+        "compra":"1125",
+        "venta":"1151"
+    },
+
+    "DolarOficial":"849",
+
+    "Euro":{
+        "compra":"875",
+        "venta":"948"
+    },
+
+    "EuroTarjeta":"1517",
+
+    "Real":{
+        "compra":"162",
+        "venta":"192"
+    },
+
+    "RealTarjeta":"308",
+
+    "dolarBlue": {
+        "venta": "1185",
+        "compra": "1165"
+    },
+
+    "ContadoConLiqui": "1265",
+
+    "DolarTarjeta": "1358",
+
+    "DolarMayorista": "830",
+
+    "Libra":{
+        "Venta":"1135",
+        "Compra":"910"
+    },
+
+    "LibraTarjeta":"1816",
+
+    "PesoUruguayo": {
+        "venta":"24",
+        "compra":"17"
+    },
+    
+    "PesoUruguayoTarjeta":"38"
+
+}

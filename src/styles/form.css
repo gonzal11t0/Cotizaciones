@@ -1,0 +1,50 @@
+body{
+    overflow-x: hidden;
+}
+.container-form{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    margin: 0 auto;
+    margin-top:30vh;
+    height: auto;
+    width: 800px;
+    background-color: #06521e;
+    text-align: center;
+}
+form{
+    display: inline;
+}
+form input{
+    align-items:center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:    center;
+    width:100%;
+    border:3px solid #ccc;
+    box-sizing:border-box;
+    margin-top:90px;
+    padding:10px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+.css-c5v1qu-MuiInputBase-input-MuiFilledInput-input::-webkit-input-placeholder {
+    color: white !important ;
+    opacity:1 !important;
+}
+.container-button-form{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    height: auto;
+    margin: 0 auto;
+    width:800px;
+    text-align: center;
+    margin-bottom: 15px;
+}
