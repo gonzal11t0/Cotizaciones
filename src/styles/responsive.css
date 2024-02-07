@@ -65,17 +65,20 @@
     .cotizaciones tr th:nth-child(3), .cotizaciones tr td:nth-child(3) {
         display:in;
     }
-    .my-4 {
-        margin-top: 20vh !important;
-        margin-bottom: 0rem!important;
-        width:400px !important;
-    }
     .container-button {
         position: fixed;
         bottom:120px;
         right: 10vh !important;;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
+    }
+    .container-form {
+        width:100% !important;
+    }
+    .my-4 {
+        width:100% !important;
+        margin-top:35vh !important ;
+        margin-bottom:8vh !important;
     }
 }
 @media screen and (min-width:230px) and (max-width:400px){
