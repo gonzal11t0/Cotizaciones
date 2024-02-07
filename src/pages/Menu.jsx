@@ -86,7 +86,7 @@ const Menu = () => {
                     <nav>
                         <Ul className='menu-horizontal'>
                             <Li>
-                                <StyledLink to="/">Home</StyledLink>
+                                <StyledLink to="/Home">Home</StyledLink>
                             </Li>
                             <Li>
                                 <StyledLink to="/Monedas">Monedas</StyledLink>
