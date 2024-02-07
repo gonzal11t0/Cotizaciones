@@ -10,7 +10,7 @@ const Footer=()=>{
                         <a className='nav-link px-2 text-muted' href='https://www.linkedin.com/in/gonzalo-lazarte-desarrollador-web/' target='_blank' rel='noreferrer'>Linkedin:</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link px-2 text-muted' href='https://www.outlook.com' target='_blank' rel='noreferrer'>Email:</a>
+                        <a className='nav-link px-2 text-muted' href='mailto:Gonzalo-Lazarte-Programador@outlook.com' target='_blank' rel='noreferrer'>Email:</a>
                     </li>
                 </ul>
                 <p className='text-center text-muted'>© 2024 Company, Inc</p>
