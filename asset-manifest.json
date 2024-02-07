@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cotizaciones/static/css/main.16708a44.css",
+    "main.js": "/Cotizaciones/static/js/main.9b2855e9.js",
+    "index.html": "/Cotizaciones/index.html",
+    "main.16708a44.css.map": "/Cotizaciones/static/css/main.16708a44.css.map",
+    "main.9b2855e9.js.map": "/Cotizaciones/static/js/main.9b2855e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16708a44.css",
+    "static/js/main.9b2855e9.js"
+  ]
+}
