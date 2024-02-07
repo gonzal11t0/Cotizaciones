@@ -65,6 +65,62 @@
     .cotizaciones tr th:nth-child(3), .cotizaciones tr td:nth-child(3) {
         display:in;
     }
+    .container-calculadora,.container-titulo-calculadora,.form,.container-resultado{
+        width: 230px !important;
+    }
+    .container-titulo-calculadora h1{
+        font-size:1rem !important;
+        color: #000000 !important;
+    }
+    .container-titulo-calculadora h1::first-letter{
+        color: green;
+    }
+    h1.icon.calculadora {
+        background-image: url(../pages/calculadora.png);
+    }
+    h1.icon {
+        padding: 20px 0 20px 60px;
+        background-image: url(../pages/calculadora.png);
+        background-position:left;
+        background-repeat: no-repeat;
+        color: #c5cad0;
+        margin: 0 auto;
+    }
+    .container-resultado h2{
+        padding-bottom:2vh;
+    }
+    .container-select-options {
+        position: relative;
+        width: 200px; 
+        margin: 0 auto;
+        padding-top:2vh;
+    }
+    select {
+        width:100%;
+        padding:12px;
+        border:5px solid #025e5e;
+        border-radius:10px;
+        appearance: none;
+        background-color: #025e5e;
+        color:#ffff;
+        cursor: pointer;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        -ms-border-radius:10px;
+        -o-border-radius:10px;
+    }
+    select:focus {
+        outline: none;
+        border-color: #025e2b; /* cambia el color del borde cuando está enfocado */
+    }
+    option {
+        background-color: #fff; 
+        color: #000; 
+    }
+    option:hover {
+        background-color: #007bff;
+        color: #fff; 
+    }
     .container-button {
         position: fixed;
         bottom:120px;
