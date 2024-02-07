@@ -74,7 +74,7 @@ const tipoDivisa = obtenerTipoDivisa();
                     </div>
                     <div className='form'>
                         <TextField
-                            label="Cantidad de pesos"
+                            label="Ingrese los dolares"
                             variant="filled"
                             margin="normal"
                             type="number"
