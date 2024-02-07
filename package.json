@@ -2,7 +2,7 @@
   "name": "cotizaciones",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://gonzal11t0.github.io/Cotizaciones/",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -48,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

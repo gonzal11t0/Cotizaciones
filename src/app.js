@@ -48,7 +48,7 @@ const App = () => {
           <Logo />
           <Menu />
           <Routes>
-            <Route path="/" element={<Inicio />} />
+            <Route path="/Home" element={<Inicio />} />
             <Route path="/Monedas/*" element={<Monedas />} />
             <Route path="/Dolar" element={<Dolar />} />
             <Route path="/Euro" element={<Euro />} />
