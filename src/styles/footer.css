@@ -49,7 +49,10 @@ footer{
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-weight: var(--bs-nav-link-font-weight);
     color: #ffff !important;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+.nav-link:hover {
+    text-decoration: underline 2px solid rgb(247, 30, 30); 
 }

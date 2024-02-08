@@ -80,7 +80,7 @@ const Inicio =()=>{
     const variacionTucuman = Cotizaciones.DolarBlueTucuman.venta - Cotizaciones.DolarBlueTucuman.compr;
     const spreadTucuman = (Cotizaciones.DolarBlueTucuman.venta - Cotizaciones.DolarBlueTucuman.compra)
     return (
-        <div>
+        <div role="article" aria-label="Se muestran las distintas cotizaciones del dolar en las provincias">
             <Home compra={Cotizaciones.DolarBlueBSAS.compra}            venta={Cotizaciones.DolarBlueBSAS.venta}            variacion={variacionBSAS}            spread={spreadBSAS}                date={new Date().toISOString()} title="Dolar Blue en Buenos Aires"/>
             <Home compra={Cotizaciones.DolarBlueCapitalFederal.compra}  venta={Cotizaciones.DolarBlueCapitalFederal.venta}  variacion={variacionCapitalFederal}  spread={spreadCapitalFederal}      date={new Date().toISOString()} title="Dolar Blue en Capital Federal"/>
             <Home compra={Cotizaciones.DolarBlueCatamarca.compra}       venta={Cotizaciones.DolarBlueCatamarca.venta}       variacion={variacionCatamarca}       spread={spreadCatamarca}           date={new Date().toISOString()} title="Dolar Blue en Catamarca"/>

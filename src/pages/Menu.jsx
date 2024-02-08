@@ -82,7 +82,7 @@ const SubLi = styled.li`
 const Menu = () => {
     return (
             <>
-                <Header>
+                <Header role="heading">
                     <nav>
                         <Ul className='menu-horizontal'>
                             <Li>
