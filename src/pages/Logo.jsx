@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import '../styles/responsive.css'
+
 const Logos = styled.img`
     display: block;
     height:59px;
@@ -13,7 +14,7 @@ const Logos = styled.img`
 
 const Logo = () => {
     return (
-        <Logos src='https://www.infodolar.com/shared/images/logos/infodolar.png' alt='logo' />
+        <Logos role='img' aria-label='logo pagina' aria-controls='logo-1' rel="preload" src='https://www.infodolar.com/shared/images/logos/infodolar.png' alt='logo' />
     );
 };
 

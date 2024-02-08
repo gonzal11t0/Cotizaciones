@@ -9,8 +9,8 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const Pregunstas=()=>{
   return(
-    <div className="container container-preguntas">
-      <Accordion sx="background:green; color:white;">
+    <div className="container container-preguntas" >
+      <Accordion role='button' aria-expanded aria-controls="panel1-content" aria-label="Preguntas y respuestas sobre el Dolar." sx="background:green; color:white;">
         <AccordionSummary expandIcon={<ArrowDownwardIcon />} aria-controls="panel1-content" id="panel1-header">
           <Typography>Dólar Blue: ¿cuál es la cotización del dólar Blue o el precio dólar blue hoy? A cuánto se vende el dólar blue hoy?</Typography>
         </AccordionSummary>
@@ -27,7 +27,7 @@ const Pregunstas=()=>{
         
       </Accordion>
       
-      <Accordion sx="background:green; color:white;">
+      <Accordion role='button' aria-expanded aria-controls="panel2-content" aria-label="Preguntas y respuestas sobre el Dolar." sx="background:green; color:white;">
         <AccordionSummary expandIcon={<ArrowDownwardIcon />} aria-controls="panel1-content" id="panel1-header">
           <Typography>¿Qué es el Dólar Blue?</Typography>
         </AccordionSummary>
@@ -41,7 +41,7 @@ const Pregunstas=()=>{
       </Accordion>
 
 
-      <Accordion sx="background:green; color:white;">
+      <Accordion role='button' aria-expanded aria-controls="panel3-content" aria-label="Preguntas y respuestas sobre el Dolar." sx="background:green; color:white;">
         <AccordionSummary expandIcon={<ArrowDownwardIcon />} aria-controls="panel1-content" id="panel1-header">
           <Typography>¿Existe una cotización o precio oficial del dólar blue?</Typography>
         </AccordionSummary>
@@ -53,7 +53,7 @@ const Pregunstas=()=>{
       
       </Accordion>
       
-      <Accordion sx="background:green; color:white;">
+      <Accordion role='button' aria-expanded aria-controls="panel4-content" aria-label="Preguntas y respuestas sobre el Dolar." sx="background:green; color:white;">
         <AccordionSummary expandIcon={<ArrowDownwardIcon />} aria-controls="panel1-content" id="panel1-header">
           <Typography>¿De dónde surge la cotización o precio del dólar blue diariamente y dónde puedo comprar dólar blue?</Typography>
         </AccordionSummary>
@@ -68,7 +68,7 @@ const Pregunstas=()=>{
         </AccordionDetails>
       </Accordion>
 
-      <Accordion sx="background:green; color:white;">
+      <Accordion role='button' aria-expanded aria-controls="panel5-content" aria-label="Preguntas y respuestas sobre el Dolar." sx="background:green; color:white;">
         <AccordionSummary expandIcon={<ArrowDownwardIcon />} aria-controls="panel1-content" id="panel1-header">
           <Typography>¿Las compras y ventas de dólar blue se realizan por transferencia bancaria?</Typography>
         </AccordionSummary>
@@ -80,7 +80,7 @@ const Pregunstas=()=>{
 
       </Accordion>
 
-      <Accordion sx="background:green; color:white;">
+      <Accordion role='button' aria-expanded aria-controls="panel6-content" aria-label="Preguntas y respuestas sobre el Dolar." sx="background:green; color:white;">
         <AccordionSummary expandIcon={<ArrowDownwardIcon/>} aria-controls="panel1-content" id="panel1-header">
           <Typography>Si compro dólar blue, ¿estoy pagando el impuesto PAIS del 30%?</Typography>
         </AccordionSummary>
@@ -93,7 +93,7 @@ const Pregunstas=()=>{
         </AccordionDetails>
       </Accordion>
 
-      <Accordion sx="background:green; color:white;">
+      <Accordion role='button' aria-expanded aria-controls="panel7-content" aria-label="Preguntas y respuestas sobre el Dolar." sx="background:green; color:white;">
         <AccordionSummary expandIcon={<ArrowDownwardIcon/>} aria-controls="panel1-content" id="panel1-header">
           <Typography>¿Cómo es también conocido o denominado el dólar blue?</Typography>
         </AccordionSummary>
@@ -104,7 +104,7 @@ const Pregunstas=()=>{
         </AccordionDetails>
       </Accordion>
     
-      <Accordion sx="background:green; color:white;">
+      <Accordion role='button' aria-expanded aria-controls="panel8-content" aria-label="Preguntas y respuestas sobre el Dolar." sx="background:green; color:white;">
         <AccordionSummary expandIcon={<ArrowDownwardIcon/>} aria-controls="panel1-content" id="panel1-header">
           <Typography>¿Quiénes compran dólar blue?</Typography>
         </AccordionSummary>
@@ -117,7 +117,7 @@ const Pregunstas=()=>{
         </AccordionDetails>
       </Accordion>
     
-      <Accordion sx="background:green; color:white;">
+      <Accordion role='button' aria-expanded aria-controls="panel9-content" aria-label="Preguntas y respuestas sobre el Dolar." sx="background:green; color:white;">
         <AccordionSummary expandIcon={<ArrowDownwardIcon/>} aria-controls="panel1-content" id="panel1-header">
           <Typography>¿Por qué la gente compra dólares blue?</Typography>
         </AccordionSummary>

@@ -82,35 +82,35 @@ const SubLi = styled.li`
 const Menu = () => {
     return (
             <>
-                <Header role="heading">
-                    <nav>
+                <Header role="navigation">
+                    <nav  aria-label='Menu de la pagina con Home-Monedas incluidas Dolar,Euro,Real,Dolar Bluue, Dolar ccl, Libra, Peso Uruguayo'>
                         <Ul className='menu-horizontal'>
                             <Li>
-                                <StyledLink to="/Home">Home</StyledLink>
+                                <StyledLink aria-controls="panel1-content" to="/Home">Home</StyledLink>
                             </Li>
                             <Li>
-                                <StyledLink to="/Monedas">Monedas</StyledLink>
+                                <StyledLink aria-controls="panel2-content" to="/Monedas">Monedas</StyledLink>
                                 <MenuVertical className='menu-vertical'>
                                     <SubLi>
-                                        <StyledLink to='/Monedas/Dolar'>$ Dolar</StyledLink>
+                                        <StyledLink aria-controls="panel3-content" to='/Monedas/Dolar'>$ Dolar</StyledLink>
                                     </SubLi>
                                     <SubLi>
-                                        <StyledLink to='/Monedas/Euro'>$ Euro</StyledLink>
+                                        <StyledLink aria-controls="panel4-content" to='/Monedas/Euro'>$ Euro</StyledLink>
                                     </SubLi>
                                     <SubLi>
-                                        <StyledLink to='/Monedas/Real'>$ Real</StyledLink>
+                                        <StyledLink aria-controls="panel5-content" to='/Monedas/Real'>$ Real</StyledLink>
                                     </SubLi>
                                     <SubLi>
-                                        <StyledLink to='/Monedas/DolarBlue'>$ Dolar Blue</StyledLink>
+                                        <StyledLink aria-controls="panel6-content" to='/Monedas/DolarBlue'>$ Dolar Blue</StyledLink>
                                     </SubLi>
                                     <SubLi>
-                                        <StyledLink to='/Monedas/ContadoConLiqui'>$ Dolar Contado Liqui</StyledLink>
+                                        <StyledLink aria-controls="panel7-content" to='/Monedas/ContadoConLiqui'>$ Dolar Contado Liqui</StyledLink>
                                     </SubLi>
                                     <SubLi>
-                                        <StyledLink to='/Monedas/Libra'>$ Libra</StyledLink>
+                                        <StyledLink aria-controls="panel8-content" to='/Monedas/Libra'>$ Libra</StyledLink>
                                     </SubLi>
                                     <SubLi>
-                                        <StyledLink to='/Monedas/PesoUruguayo'>$ Peso uruguayo</StyledLink>
+                                        <StyledLink aria-controls="panel9-content" to='/Monedas/PesoUruguayo'>$ Peso uruguayo</StyledLink>
                                     </SubLi>
                                 </MenuVertical>
                             </Li>

@@ -55,25 +55,25 @@ const Calculadora = () => {
         e.preventDefault();
     };
     return (
-        <div className='container-calculadora'>
-            <div className='container-titulo-calculadora'>
-                <h1 className='icon'>Calculadora de divisas</h1>
+        <div role='presentation' className='container-calculadora'>
+            <div  className='container-titulo-calculadora'>
+                <h1 aria-label='titulo calculadora de divisas' className='icon'>Calculadora de divisas</h1>
             </div>
-            <div className='container-operacion'>
-                <form onChange={manejarEnvio}>
+            <div role='article'  className='container-operacion'>
+                <form aria-label='articulo para seleccionar una moneda y poder hacer la convergencia al peso' onChange={manejarEnvio}>
                     <div className='container-select-options'>
                         <select name="selectedDolar" onChange={handleOptionChange}>
-                            <option id='DolarBlue' value="DolarBlue">Dolar Blue</option>
-                            <option id='Euro' value="Euro">Euro</option>
-                            <option id='Libra' value="Libra">Libra</option>
-                            <option id='Real' value="Real">Real</option>
-                            <option id='PesoUruguayo' value="PesoUruguayo">Peso Uruguayo</option>
-                            <option id='DolarMayorista' value="DolarMayorista">Dolar Mayorista</option>
-                            <option id='DolarContadoLiqui' value="DolarContadoLiqui">CCL</option>
-                            <option id='DolarTarjeta' value="DolarTarjeta">Dolar tarjeta</option>
+                            <option aria-label='opcion:opcion: Dolar Blue ' aria-controls='opcion: Dolar Blue' id='DolarBlue' value="DolarBlue">Dolar Blue</option>
+                            <option aria-label='opcion:  Euro' aria-controls='opcion: Euro' id='Euro' value="Euro">Euro</option>
+                            <option aria-label='opcion: Libra' aria-controls='opcion: Libra' id='Libra' value="Libra">Libra</option>
+                            <option aria-label='opcion: Real' aria-controls='opcion: Real' id='Real' value="Real">Real</option>
+                            <option aria-label='opcion: Peso Uruguayo' aria-controls='opcion: Peso Uruguayo' id='PesoUruguayo' value="PesoUruguayo">Peso Uruguayo</option>
+                            <option aria-label='opcion: Dolar Mayorista' aria-controls='opcion: Dolar Mayorista' id='DolarMayorista' value="DolarMayorista">Dolar Mayorista</option>
+                            <option aria-label='opcion: CCL' aria-controls='opcion: CCL' id='DolarContadoLiqui' value="DolarContadoLiqui">CCL</option>
+                            <option aria-label='opcion: Dolar tarjeta' aria-controls='opcion: Dolar tarjeta' id='DolarTarjeta' value="DolarTarjeta">Dolar tarjeta</option>
                         </select>
                     </div>
-                    <div className='form'>
+                    <div role='form' className='form'>
                         <TextField
                             label={
                                 selectedOption ? `Ingrese la cantidad en ${selectedOption}` : 'Ingrese la cantidad'

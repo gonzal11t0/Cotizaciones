@@ -47,8 +47,8 @@ const Contacto = () => {
 
     return (
         <div className="container-form">
-            <form onSubmit={manejarEnvio}>
-                <div className='form'>
+            <form role='form' onSubmit={manejarEnvio}>
+                <div aria-controls='formulario-Nombre-content' aria-label='Formulario para el ingreso del Nombre' className='form'>
                     <TextField
                         label="Nombre"
                         variant="filled"
@@ -64,7 +64,7 @@ const Contacto = () => {
                         onChange={validarNombre}
                     />
                 </div>
-                <div className='form'>
+                <div aria-controls='formulario-Apellido-content' aria-label='Formulario para el ingreso del Apellido' className='form'>
                     <TextField
                         label="Apellido"
                         variant="filled"
@@ -80,7 +80,7 @@ const Contacto = () => {
                         onChange={validarApellido}
                     />
                 </div>
-                <div className='form'>
+                <div aria-controls='formulario-Email-content' aria-label='Formulario para el ingreso del Email' className='form'>
                     <TextField
                         label="Email"
                         variant="filled"
@@ -96,8 +96,8 @@ const Contacto = () => {
                         onChange={validarEmail}
                     />
                 </div>
-                <div className="container-button-form">
-                    <Button type="submit" variant="contained" color="success">Enviar</Button>
+                <div role='button' className="container-button-form">
+                    <Button   aria-label="boton enviar formulario" aria-controls='boton-enviar-content' type="submit" variant="contained" color="success">Enviar</Button>
                 </div>
             </form>
         </div>
