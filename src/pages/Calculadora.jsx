@@ -7,6 +7,28 @@ import Cotizaciones from '../json/Cotizaciones.json';
 
 const Calculadora = () => {
 
+    const [cantidad, setCantidad] = useState(0);
+    const [isValidCantidad, setIsValidCantidad] = useState(true);
+    const [selectedOption, setSelectedOption] = useState('');
+
+    const validarCampo = (valor, setIsValidCantidad, setValid) => {
+        setValid(valor.length >= 1 && valor.trim() !== '');
+    };
+
+    const validarCantidad = (e) => {
+        const valor = e.target.value;
+        setCantidad(valor);
+        validarCampo(valor, setIsValidCantidad, setIsValidCantidad);
+    };
+
+    const obtenerTipoDivisa = () => {
+        const select = document.querySelector('select[name="selectedDolar"]');
+        return select ? select.value : '';
+    };
+
+    const handleOptionChange = (event) => {
+        setSelectedOption(event.target.value);
+    };
 
     function Operaciones(cantidad,Dolar){
         if (Dolar === "DolarTarjeta"){
@@ -18,7 +40,7 @@ const Calculadora = () => {
         }else  if (Dolar === "Euro"){
             return cantidad * Cotizaciones.EuroTarjeta;
         }else  if (Dolar === "Libra"){
-            return cantidad * Cotizaciones.Libra.Venta;
+            return cantidad * Cotizaciones.LibraTarjeta;
         }else  if (Dolar === "Real"){
             return cantidad *Cotizaciones.RealTarjeta;
         }else  if (Dolar === "PesoUruguayo"){
@@ -28,31 +50,10 @@ const Calculadora = () => {
         }
     };
 
-
-    const [cantidad,setCantidad]=useState(0);
-    const [isValidCantidad, setIsValidCantidad] = useState(true);
-
-
-    const validarCampo = (valor, setIsValidCantidad, setValid) => {
-        setValid(valor.length >= 1 && valor.trim() !== '');
-    };
-    
-    const validarCantidad = (e) => {
-        const valor = e.target.value;
-        setCantidad(valor);
-        validarCampo(valor, setIsValidCantidad, setIsValidCantidad);
-    };
-
-    const obtenerTipoDivisa = () => {
-        const select = document.querySelector('select[name="selectedDolar"]');
-        return select ? select.value : '';
-    }
-
-
+    const tipoDivisa = obtenerTipoDivisa();
     const manejarEnvio = (e) => {
         e.preventDefault();
     };
-const tipoDivisa = obtenerTipoDivisa(); 
     return (
         <div className='container-calculadora'>
             <div className='container-titulo-calculadora'>
@@ -61,20 +62,22 @@ const tipoDivisa = obtenerTipoDivisa();
             <div className='container-operacion'>
                 <form onChange={manejarEnvio}>
                     <div className='container-select-options'>
-                        <select name="selectedDolar">
-                            <option id='DolarBlue'          value="DolarBlue">Dolar Blue</option>
-                            <option id='Euro'               value="Euro">Euro</option>
-                            <option id='Libra'              value="Libra">Libra</option>
-                            <option id='Real'               value="Real">Real</option>
-                            <option id='PesoUruguayo'       value="PesoUruguayo">Peso Uruguayo</option>
-                            <option id='DolarMayorista'     value="DolarMayorista">Dolar Mayorista</option>
-                            <option id='DolarContadoLiqui'  value="DolarContadoLiqui">CCL</option>
-                            <option id='DolarTarjeta'       value="DolarTarjeta">Dolar tarjeta</option>
+                        <select name="selectedDolar" onChange={handleOptionChange}>
+                            <option id='DolarBlue' value="DolarBlue">Dolar Blue</option>
+                            <option id='Euro' value="Euro">Euro</option>
+                            <option id='Libra' value="Libra">Libra</option>
+                            <option id='Real' value="Real">Real</option>
+                            <option id='PesoUruguayo' value="PesoUruguayo">Peso Uruguayo</option>
+                            <option id='DolarMayorista' value="DolarMayorista">Dolar Mayorista</option>
+                            <option id='DolarContadoLiqui' value="DolarContadoLiqui">CCL</option>
+                            <option id='DolarTarjeta' value="DolarTarjeta">Dolar tarjeta</option>
                         </select>
                     </div>
                     <div className='form'>
                         <TextField
-                            label="Ingrese los dolares"
+                            label={
+                                selectedOption ? `Ingrese la cantidad en ${selectedOption}` : 'Ingrese la cantidad'
+                            }
                             variant="filled"
                             margin="normal"
                             type="number"
@@ -89,12 +92,12 @@ const tipoDivisa = obtenerTipoDivisa();
                         />
                     </div>
                     <div className='container-resultado'>
-                        <h2>$ {Operaciones(cantidad, tipoDivisa)}</h2>                    
+                        <h2>$ {Operaciones(cantidad, tipoDivisa)}</h2>
                     </div>
                 </form>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Calculadora;
