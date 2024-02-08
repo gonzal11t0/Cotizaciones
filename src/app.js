@@ -1,5 +1,6 @@
+// App.js
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import Monedas from './monedas/Monedas';
 import Menu from './pages/Menu';
@@ -40,7 +41,6 @@ const App = () => {
       setShowLogo(!storedDarkMode);
     }
   }, []);
-
   return (
     <div className={darkMode ? 'dark-mode' : ''}>
       <div>
@@ -50,12 +50,13 @@ const App = () => {
       </div>
       <Router>
         <>
-          {showLogo && <Logo />} {/* Renderiza el logo si showLogo es true */}
+          {showLogo && <Logo />} 
           <Menu />
           <Routes>
             <Route path="/" element={<Navigate to="/Home" />} />
             <Route path="/Home" element={<Inicio />} />
             <Route path="/Monedas/*" element={<Monedas />} />
+            <Route path="/Monedas" element={<Navigate to="/Home" />} /> {/* Redirige a la página de inicio si se intenta acceder a /Monedas */}
             <Route path="/Dolar" element={<Dolar />} />
             <Route path="/Euro" element={<Euro />} />
             <Route path="/Libra" element={<Libra />} />
