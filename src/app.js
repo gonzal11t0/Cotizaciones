@@ -18,7 +18,8 @@ import './styles/style.css';
 import './styles/responsive.css';
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const storeDark = JSON.parse(localStorage.getItem("darkMode")) || false;
+  const [darkMode, setDarkMode] = useState(storeDark);
   const [showLogo, setShowLogo] = useState(true);
 
   const toggleDarkMode = () => {
@@ -26,18 +27,16 @@ const App = () => {
   };
 
   useEffect(() => {
-    // Almacena el estado actual del modo oscuro en localStorage
     localStorage.setItem('darkMode', JSON.stringify(darkMode));
-    // Actualiza el estado del logo según el modo oscuro
     setShowLogo(!darkMode);
   }, [darkMode]);
 
   useEffect(() => {
-    // Recupera el estado del modo oscuro al cargar la aplicación
+
     const storedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
     if (storedDarkMode !== null) {
       setDarkMode(storedDarkMode);
-      // Actualiza el estado del logo según el modo oscuro
+
       setShowLogo(!storedDarkMode);
     }
   }, []);
